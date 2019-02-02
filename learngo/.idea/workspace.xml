@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27d35a98-54d1-476e-a3a6-beea81f9292a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/errorhanding/recover/recover.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errorhanding/filelisteningserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errorhanding/filelisteningserver/web.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errorhanding/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/errorhanding/fib/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,24 +31,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="13" />
+          <entry key="go" value="14" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="13" />
+          <entry key="Go" value="14" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="2042" />
+          <entry key="go" value="2205" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="2042" />
+          <entry key="Go" value="2205" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -92,13 +90,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/web.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
+            <state relative-caret-position="238">
               <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="e#14#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/errorhanding/recover/recover.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+              <folding>
+                <element signature="e#14#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,6 +153,7 @@
         <option value="$PROJECT_DIR$/errorhanding/main.go" />
         <option value="$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go" />
         <option value="$PROJECT_DIR$/errorhanding/filelisteningserver/web.go" />
+        <option value="$PROJECT_DIR$/errorhanding/recover/recover.go" />
       </list>
     </option>
   </component>
@@ -152,7 +163,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1440" />
@@ -175,19 +186,6 @@
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
               <item name="errorhanding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errorhanding" type="462c0819:PsiDirectoryNode" />
-              <item name="filelisteningserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errorhanding" type="462c0819:PsiDirectoryNode" />
-              <item name="filelisteningserver" type="462c0819:PsiDirectoryNode" />
-              <item name="filelistening" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build web.go">
+  <component name="RunManager" selected="Go Build.go build recover.go">
     <configuration name="go build defer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -250,6 +248,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build recover.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/errorhanding/recover/recover.go" />
+      <package value="learngo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build web.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -259,31 +266,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="BenchmarkLengthOfNonRepeatingSubstr in learngo/container/nonrepeatingsubstr" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/container/nonrepeatingsubstr" />
-      <framework value="gobench" />
-      <kind value="PACKAGE" />
-      <package value="learngo/container/nonrepeatingsubstr" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^BenchmarkLengthOfNonRepeatingSubstr$" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Go Test.BenchmarkLengthOfNonRepeatingSubstr in learngo/container/nonrepeatingsubstr" />
       <item itemvalue="Go Build.go build defer.go" />
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build main.go (1)" />
       <item itemvalue="Go Build.go build web.go" />
+      <item itemvalue="Go Build.go build recover.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build recover.go" />
         <item itemvalue="Go Build.go build web.go" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build defer.go" />
-        <item itemvalue="Go Test.BenchmarkLengthOfNonRepeatingSubstr in learngo/container/nonrepeatingsubstr" />
       </list>
     </recent_temporary>
   </component>
@@ -326,15 +322,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3159609" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24321389" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -466,10 +461,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/web.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="238">
           <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
             <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errorhanding/recover/recover.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="e#14#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
