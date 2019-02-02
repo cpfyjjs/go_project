@@ -1,27 +1,36 @@
 package main
 
 import (
-	"io/ioutil"
+	"github.com/gpmgo/gopm/modules/log"
+	"learngo/errorhanding/filelisteningserver/filelistening"
 	"net/http"
 	"os"
 )
 
-func main() {
-	http.HandleFunc("/list/",func(writer http.ResponseWriter,request *http.Request){
-		path:= request.URL.Path[len("/list/"):]
-		file,err := os.Open(path)
-		if err!= nil{
-			http.Error(writer,err.Error(),http.StatusInternalServerError)
-			return
-		}
+type appHandler func(writer http.ResponseWriter, request *http.Request) error
 
-		defer file.Close()
-		all,err := ioutil.ReadAll(file)
+func errWrapper(handler appHandler)func(http.ResponseWriter,*http.Request){
+	return func(writer http.ResponseWriter, request *http.Request) {
+		err:= handler(writer,request)
 		if err!= nil{
-			panic(err)
+			log.Warn("Error handing request: %s",err.Error())
+			code := http.StatusOK
+			switch {
+			case os.IsNotExist(err):
+				code = http.StatusNotFound
+			case os.IsPermission(err):
+				code = http.StatusForbidden
+			default:
+				code = http.StatusInternalServerError
+			}
+			http.Error(writer,http.StatusText(code),code)
 		}
-		writer.Write(all)
-	})
+	}
+}
+
+
+func main() {
+	http.HandleFunc("/list/",errWrapper(filelistening.HandleFileList))
 
 	err:=http.ListenAndServe(":8888",nil)
 	if err!= nil{
