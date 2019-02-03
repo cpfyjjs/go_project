@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27d35a98-54d1-476e-a3a6-beea81f9292a" name="Default Changelist" comment="0202">
-      <change afterPath="$PROJECT_DIR$/errorhanding/filelisteningserver/errwraper_test.go" afterDir="false" />
+    <list default="true" id="27d35a98-54d1-476e-a3a6-beea81f9292a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crawler/engine/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/fetcher/fetcher.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/zhenai/parser/citylist.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errorhanding/filelisteningserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errorhanding/filelisteningserver/web.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errorhanding/filelisteningserver/errwraper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/errorhanding/filelisteningserver/errwraper_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/learngo$TestErrWrapper_in_learngo_errorhanding_filelisteningserver.out" NAME="TestErrWrapper in learngo/errorhanding/filelisteningserver Coverage Results" MODIFIED="1549166744128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/learngo$TestAdd_in_learngo_basic_basic.out" NAME="TestAdd in learngo/basic/basic Coverage Results" MODIFIED="1549012535847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/learngo$TestSubstr_in_learngo_container_nonrepeatingsubstr.out" NAME="TestSubstr in learngo/container/nonrepeatingsubstr Coverage Results" MODIFIED="1549014541431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
@@ -33,26 +35,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="16" />
+          <entry key="go" value="22" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="16" />
+          <entry key="Go" value="22" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="3421" />
-          <entry key="txt" value="4" />
+          <entry key="go" value="4766" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="3421" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Go" value="4766" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.go.postfix.template.usages.trigger">
@@ -65,22 +67,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/web.go">
+        <entry file="file://$PROJECT_DIR$/crawler/fetcher/fetcher.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="378">
+              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+              <folding>
+                <element signature="e#17#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/zhenai/parser/citylist.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <folding>
+                <element signature="e#16#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/errwraper_test.go">
+        <entry file="file://$PROJECT_DIR$/crawler/engine/engine.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-              <folding>
-                <element signature="e#14#81#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crawler/engine/types.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -88,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="399">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#23#64#0" expanded="true" />
               </folding>
@@ -126,6 +149,10 @@
         <option value="$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go" />
         <option value="$PROJECT_DIR$/errorhanding/filelisteningserver/web.go" />
         <option value="$PROJECT_DIR$/errorhanding/filelisteningserver/errwraper_test.go" />
+        <option value="$PROJECT_DIR$/crawler/fetcher/fetcher.go" />
+        <option value="$PROJECT_DIR$/crawler/engine/types.go" />
+        <option value="$PROJECT_DIR$/crawler/zhenai/parser/citylist.go" />
+        <option value="$PROJECT_DIR$/crawler/engine/engine.go" />
       </list>
     </option>
   </component>
@@ -157,20 +184,26 @@
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errorhanding" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errorhanding" type="462c0819:PsiDirectoryNode" />
-              <item name="filelisteningserver" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
-              <item name="errorhanding" type="462c0819:PsiDirectoryNode" />
-              <item name="filelisteningserver" type="462c0819:PsiDirectoryNode" />
-              <item name="filelistening" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="zhenai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngo" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler" type="462c0819:PsiDirectoryNode" />
+              <item name="zhenai" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,34 +305,34 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 42m 55s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 43m 41s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 44m 20s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 47m 11s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 48m 06s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 50m 26s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 51m 06s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 51m 34s.xml">
-      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 51m 43s.xml">
       <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
     </history-entry>
     <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 11h 52m 03s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 03m 26s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 03m 52s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 04m 13s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 05m 07s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 05m 34s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 05m 44s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 07m 15s.xml">
+      <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestErrWrapper_in_learngo_errorhanding_filelisteningserver - 2019.02.03 at 12h 07m 42s.xml">
       <configuration name="TestErrWrapper in learngo/errorhanding/filelisteningserver" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
@@ -316,12 +349,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28773072" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28773072" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,7 +367,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" visible="true" weight="0.17110874" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
@@ -392,7 +425,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0202" />
-    <option name="LAST_COMMIT_MESSAGE" value="0202" />
+    <MESSAGE value="0203" />
+    <option name="LAST_COMMIT_MESSAGE" value="0203" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/basic/basic/add_test.go">
@@ -482,30 +516,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/web.go">
+    <entry file="file://C:/Go/src/os/error.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="247">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/filelistening/handler.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#23#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/web.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/errorhanding/filelisteningserver/errwraper_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="378">
+          <caret line="77" selection-start-line="77" selection-start-column="2" selection-end-line="82" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/fetcher/fetcher.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding>
-            <element signature="e#14#81#0" expanded="true" />
+            <element signature="e#17#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/engine/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/zhenai/parser/citylist.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#16#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler/engine/engine.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

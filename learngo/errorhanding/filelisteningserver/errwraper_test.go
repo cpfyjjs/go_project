@@ -1,9 +1,11 @@
 package main
 
 import (
+	"github.com/pkg/errors"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"strings"
 	"testing"
 )
@@ -26,15 +28,37 @@ func errUserError(writer http.ResponseWriter, request *http.Request) error {
 	return testingUserError("user error")
 }
 
+func errNotFound(writer http.ResponseWriter, request *http.Request) error {
+	return os.ErrNotExist
+}
+
+func errNotPermission(writer http.ResponseWriter, request *http.Request) error {
+	return os.ErrPermission
+}
+
+func errUnknown(writer http.ResponseWriter, request *http.Request) error {
+	return errors.New("Unknown Error")
+}
+
+func noError(writer http.ResponseWriter, request *http.Request) error {
+	return nil
+}
+
+var tests = []struct {
+	h       appHandler
+	code    int
+	message string
+}{
+	{errPanic, 500, "Internal Server Error"},
+	{errUserError, 400, "user error\nInternal Server Error"},
+	{errNotFound, 404, "Not Found"},
+	{errNotPermission, 403, "Forbidden"},
+	{errUnknown, 500, "Internal Server Error"},
+	{noError, 200, ""},
+}
+
 func TestErrWrapper(t *testing.T) {
-	tests := []struct {
-		h       appHandler
-		code    int
-		message string
-	}{
-		{errPanic, 500, "Internal Server Error"},
-		{errUserError, 400, "user error\nInternal Server Error"},
-	}
+
 	for _, tt := range tests {
 		f := errWrapper(tt.h)
 		response := httptest.NewRecorder()
@@ -50,3 +74,10 @@ func TestErrWrapper(t *testing.T) {
 		}
 	}
 }
+
+//func TestErrWraperInServer(t *testing.T){
+//	for _,tt:=range tests{
+//		f := errWrapper(tt.h)
+//
+//	}
+//}
