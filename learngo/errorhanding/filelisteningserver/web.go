@@ -9,11 +9,25 @@ import (
 
 type appHandler func(writer http.ResponseWriter, request *http.Request) error
 
-func errWrapper(handler appHandler)func(http.ResponseWriter,*http.Request){
+func errWrapper(handler appHandler) func(http.ResponseWriter, *http.Request) {
 	return func(writer http.ResponseWriter, request *http.Request) {
-		err:= handler(writer,request)
-		if err!= nil{
-			log.Warn("Error handing request: %s",err.Error())
+
+		defer func() {
+			r := recover()
+			if r != nil {
+				log.Error("Panic: %v", r)
+				http.Error(writer, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
+			}
+		}()
+
+		err := handler(writer, request)
+		if err != nil {
+			log.Warn("Error handing request: %s", err.Error())
+
+			if userErr, ok := err.(userError); ok {
+				http.Error(writer, userErr.Message(), http.StatusBadRequest)
+			}
+
 			code := http.StatusOK
 			switch {
 			case os.IsNotExist(err):
@@ -23,17 +37,21 @@ func errWrapper(handler appHandler)func(http.ResponseWriter,*http.Request){
 			default:
 				code = http.StatusInternalServerError
 			}
-			http.Error(writer,http.StatusText(code),code)
+			http.Error(writer, http.StatusText(code), code)
 		}
 	}
 }
 
+type userError interface {
+	error
+	Message() string
+}
 
 func main() {
-	http.HandleFunc("/list/",errWrapper(filelistening.HandleFileList))
+	http.HandleFunc("/list/", errWrapper(filelistening.HandleFileList))
 
-	err:=http.ListenAndServe(":8888",nil)
-	if err!= nil{
+	err := http.ListenAndServe(":8888", nil)
+	if err != nil {
 		panic(err)
 	}
 }
